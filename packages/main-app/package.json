@@ -1,0 +1,24 @@
+{
+  "name": "main-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start -p 3001",
+    "docker": "docker stop iframe-main || true && docker rm iframe-main || true && docker build . -t iframe-main-board && docker run -d -p 3001:3001 --name iframe-main iframe-main-board"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.6.0",
+    "cookie": "^0.4.1",
+    "i18next": "^20.3.1",
+    "iframe-resizer-react": "^1.1.0",
+    "mongodb": "^3.6.9",
+    "next": "10.2.3",
+    "react": "17.0.2",
+    "react-cookie": "^4.1.1",
+    "react-dom": "17.0.2",
+    "react-i18next": "^11.10.0",
+    "react-redux": "^7.2.4"
+  }
+}

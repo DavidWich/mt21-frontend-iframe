@@ -1,0 +1,11 @@
+.course {
+  max-width: 60rem;
+  width: 90%;
+  margin-left: 2rem;
+}
+
+.course ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

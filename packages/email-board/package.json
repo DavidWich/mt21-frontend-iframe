@@ -1,0 +1,19 @@
+{
+  "name": "email-board",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3003",
+    "build": "next build",
+    "start": "next start -p 3003",
+    "docker": "docker stop iframe-email || true && docker rm iframe-email || true && docker build . -t iframe-email-board && docker run -d -p 3003:3003 --name iframe-email iframe-email-board"
+  },
+  "dependencies": {
+    "i18next": "^20.3.1",
+    "mongodb": "^3.6.9",
+    "next": "^11.0.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-i18next": "^11.10.0"
+  }
+}

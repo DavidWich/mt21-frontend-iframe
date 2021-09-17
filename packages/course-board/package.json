@@ -1,0 +1,19 @@
+{
+  "name": "course-board",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3004",
+    "build": "next build",
+    "start": "next start -p 3004",
+    "docker": "docker stop iframe-course || true && docker rm iframe-course || true && docker build . -t iframe-course-board && docker run -d -p 3004:3004 --name iframe-course iframe-course-board"
+  },
+  "dependencies": {
+    "i18next": "^20.3.1",
+    "mongodb": "^3.6.9",
+    "next": "^11.0.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-i18next": "^11.10.0"
+  }
+}
